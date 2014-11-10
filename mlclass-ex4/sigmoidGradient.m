@@ -13,16 +13,8 @@ g = zeros(size(z));
 %               each value of z (z can be a matrix, vector or scalar).
 
 
-
-
-
-
-
-
-
-
-
-
+zSigmoid = sigmoid(z);
+g = zSigmoid .* (ones(size(z)) - zSigmoid);
 
 
 % =============================================================
